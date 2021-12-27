@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
-import Expenses from "./expenses";
-import Invoices from "./invoices";
+
 
 export default function App() {
   return (
