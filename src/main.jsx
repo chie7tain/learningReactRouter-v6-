@@ -11,6 +11,7 @@ render(
       <Route path="/" element={<App />}>
         <Route path="invoices" element={<Invoices />} />
         <Route path="expenses" element={<Expenses />} />
+        
       </Route>
     </Routes>
   </BrowserRouter>,
