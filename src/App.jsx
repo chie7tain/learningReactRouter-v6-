@@ -1,5 +1,9 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet,useLocation,NavLink } from "react-router-dom";
 
+function QueryNavLink({to, ...props}){
+  let location = useLocation();
+  return <NavLink to={to + location.search} {...props}/>
+}
 export default function App() {
   return (
     <div>
@@ -9,6 +13,7 @@ export default function App() {
         <Link to="/expenses">Expenses</Link>
       </nav>
       <Outlet />
+
     </div>
   );
 }
